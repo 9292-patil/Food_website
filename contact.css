@@ -1,0 +1,92 @@
+html{
+  background: rgb(91, 19, 60);
+  box-sizing:border-box;
+}
+*{
+box-sizing:inherit;
+
+}
+body{
+background: white;
+width:90%;
+max-width: 850px;
+margin:50px auto;
+font-family: 'Baloo Bhai 2', cursive;
+font-size: 15px;
+font-weight: 520;
+padding:30px;
+
+}
+h1, p{
+
+text-align: center;
+}
+label{
+display:block;
+margin:1em 0 .2em;
+}
+/* single-line text, checkbox, and button */
+input, select, textarea{
+display:block;
+width:100%;
+padding:.3em;
+font-size:20px;
+background-color:#fbfbfb;
+border:solid 1px #CCC;
+resize:vertical;
+}
+textarea{
+min-height:180px;
+}
+
+input[type=submit]{
+background:rgb(220, 70, 70);
+margin:1em 0 0;
+color:white;
+border:none;
+border-radius:8px;
+transition:all .3s ease-out;
+}
+
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+textarea:focus,
+textarea:hover{
+background: lavenderBlush;
+}
+
+input, select, textarea {
+  border-radius: 9px;
+  border: solid 2px rgb(96, 93, 93);
+}
+
+/* hover and focus states */
+input[type=submit]:hover,
+input[type=submit]:focus{
+background: rgb(68, 138, 68);
+outline:none;
+}
+
+@media screen and (min-width:600px) {
+/*  make the form 2 columns */
+form:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+.column{
+  width:50%;
+  padding:1em;
+  float:left;
+}
+}
+
+
+
+
+
+
+
+
